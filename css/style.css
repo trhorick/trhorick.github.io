@@ -1,7 +1,7 @@
 body{
   background-color: black;
   font-family: 'Questrial', sans-serif;
-  color:white;
+  color:white !important;
 }
 h5{
   font-family: 'Questrial', sans-serif;
@@ -36,7 +36,7 @@ h6{
 }
 .mdl-navigation__link{
   font-family: 'Questrial', sans-serif;
-  color:grey;
+  /*color:grey;*/
 }
 .mdl-navigation__link:hover{
   text-decoration: line-through;
@@ -246,4 +246,7 @@ pre{
 .titlehead{
   margin-top:10px;
   margin-bottom:-10px;
+}
+.pink{
+  color:rgb(255,64,129);
 }
