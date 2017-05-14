@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Knewave&effect=anaglyph" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Knewave', cursive;
+        font-size: 20px;
+
+      }
+    </style>
+  </head>
+  <body>
+
+
+    <div id="background1">
+
+    <div class="butfont">
+
+    <center>
+
+    <img src="skirt/play.png" width:"50" height:"50" class="button" id="button" style="vertical-align:middle" onclick="playAudio()"> </img>
+    </center>
+    <audio loop id="myAudio">
+    	<source src="audio/mixdown.wav" type="audio/mpeg">
+    </audio>
+    </div>
+<div class="PSA">
+   <h1 class="font-effect-anaglyph" id="text"></h1>
+
+  </div>
+
+   <img id="skirt" src="skirt/tskirtdown.png" onmouseover ="glowskirt()" onmouseleave="downskirt()" onclick="upskirt()"></img>
+  
+
+
+  </div>
+
+
+
+    <script>
+    	var a= document.getElementById("myAudio");
+    	var x=0;
+    	var b=0;
+    	var c=0;
+    	var d=0;
+    	var e=0;
+    	var interval= setInterval(checkTime,1000);
+    	var images = new Array
+    	images[0]="skirt/tskirtupglow.png";
+    	images[1]="skirt/tskirtup.png";
+    	console.log(e);
+
+    	function checkTime(){
+    		if((myAudio.currentTime)>=117){
+    			document.getElementById("skirt").src="skirt/tskirtupglow.png";
+    			flicker();
+    			e=3;
+    			clearInterval(interval);
+    	}
+    }
+    	function flicker(){
+    		setInterval(fuckery,1000);
+    		}
+ 		function fuckery(){
+ 			if (e===3){
+ 			document.getElementById("skirt").src=images[x]
+ 			if (x<1){
+ 			x++;
+ 		}
+ 		else {
+ 			x=0
+ 		}}
+ 		}
+    	function playAudio(){
+    		hideButton();
+    		a.play();
+    	}
+    	function glowskirt(){
+    		if (b===0){
+    		document.getElementById("skirt").src="skirt/tskirtdownglow.png";
+    		}}
+		function downskirt(){
+			if (b===0){
+    		document.getElementById("skirt").src="skirt/tskirtdown.png";
+    		document.getElementById("button").style.display="none";
+    	}
+    	}
+
+    	function upskirt(){
+    		if (e===0){
+    		document.getElementById("skirt").src="skirt/tskirtup.png";
+    		document.getElementById("button").style.display="inline-block";
+    		b=1;
+    		e=1;
+    	}
+    	if (e===1){
+    		document.getElementById("button").style.display="inline-block";
+    	}
+        if (e===3){
+            e=4;
+        }
+    	if (e===4){
+    		document.getElementById("skirt").src="skirt/tskirtdown.png";
+    		stopaudio();
+            document.getElementById("text").innerHTML= "You stopped the audio. <br> Now let's stop Rape Culture!"
+
+    	}
+    }
+    		function pauseAudio(){
+				a.pause();
+			}
+			
+			function hideButton(){
+				document.getElementById("button").style.display="none";
+			}
+			function glowup(){
+				document.getElementById("skirt").src="skirt/tskirtupglow.png";
+				console.log("Hello shitty thing");
+			}
+			function upnoglow(){
+				document.getElementById("skirt").src="skirt/tskirtup.png";
+			}
+			function stopaudio(){
+				a.currentTime = 0;
+				a.pause();
+			}
+
+
+    </script>
+    
+    <br>
+    </div>
+   </div>
+  </body>
+</html>

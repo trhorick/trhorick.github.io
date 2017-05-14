@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+<title> Home Page</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<div>
+<body class="homepage">
+<center><img class="logo" border="0" src="./data/white.png" align="center"></center>
+<br>
+<p class="home"> A project created from Twitter data, SocialSymophony was created by Tyler Rhorick to give a visual and auditory experience of the 2016 United States Presidential election. Starting from the day that Hillary Clinton was named the offical Democratic Party nominee, the project uses size to visualize the number of users who favorited the statuses and opacity to visualize the number of retweets. 
+</p>
+<a href="./index.html"><center><img id="button" onmouseover="hover()" onmouseleave="leave()" border="0" src="./data/play.png" align="middle"></center></a>;
+</body>
+</div>
+
+<script>
+
+function hover(){
+document.getElementById("button").src="./data/playon.png";
+}
+function leave(){
+	document.getElementById("button").src="./data/play.png";
+}
+</script>

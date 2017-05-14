@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="author" content="Jiwon Shin">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <title>Tyler Rhorick </title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="57x57" href="./apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="./android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <!-- Always shows a header, even in smaller screens. -->
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header role="banner" class="mdl-layout__header">
+  <div class="mdl-layout__header-row hide-for-print"><h1>
+          <a href="home.html"><img class="mdl-layout-title
+          mdl-layout--large-screen-only" src="./images/clear.png" style="width:45px; position:relative; left:-50px;"></a></h1>
+      <div style="left:-25px;"
+       <span class="mdl-layout-title"><a class="title-link" href="home.html">HOME</a> // <a class="title-link" href="about.html"><span class="active">ABOUT</a></span> // <a class="title-link" href="resume.html">RESUME</a>
+      </span>
+      </div>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <div style="position: relative; left:25px;">
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="https://www.instagram.com/trhorick/" target="_blank">INSTAGRAM</a> //
+        <a class="mdl-navigation__link wechat" onclick="wedisplay()" >WECHAT</a> //
+        <a class="mdl-navigation__link" href="mailto:tpr226@nyu.edu?">EMAIL</a>
+      </nav>
+      <nav class="mdl-navigation
+      mdl-layout--small-screen-only">
+      <a href=""><img class="mdl-layout-title
+          " src="./images/clear.png" style="width:40px; position:relative; left:-20px"></a></h1>
+      </div>
+    </div>
+  </header>
+   <div class="mdl-layout__drawer mdl-layout--small-screen-only" style="float:right;">
+    <span class="mdl-layout-title">CONNECT</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="https://www.instagram.com/trhorick/" target="_blank">INSTAGRAM</a>
+      <a class="mdl-navigation__link wechat" onclick="wedisplay()">WECHAT</a>
+      <a class="mdl-navigation__link" href="mailto:tpr226@nyu.edu?">EMAIL</a>
+    </nav>
+  </div>
+
+  <main class="mdl-layout__content">
+    <div class="full-page-content">
+      <img id="profile-img" src="images/profile.png">
+      <!-- Raised button -->
+      <div class="text-content">
+        <h5>ABOUT // TYLER RHORICK</h5>
+        Originally from Myrtle Beach, South Carolina, Tyler Rhorick is pursuing a Bachelor of Science in <a href="https://shanghai.nyu.edu/academics/majors/interactive-media" target="_blank" class="link">Interactive Media Arts (IMA)</a> from <a href="https://shanghai.nyu.edu/about" target="_blank" class="link" >NYU Shanghai</a> with a minor in <a href ="https://shanghai.nyu.edu/academics/majors/global-china" target="_blank" class="link">Global China Studies</a>. Studying in Shanghai, Prague, and Accra, Tyler has followed the NYU Shanghai motto of "making the world his major" and has been dedicated to making projects that communicate human stories. Having had a transformative experience from his education and wanting to create a stage for other students to have the same transformation, Tyler will join his alma mater as the Associate of New Student Programs in the Summer of 2017. Tyler is excited to see how his education in tech might be used to better New Student Programs and would love to continue helping any and all students struggling with their IMA projects in the building. Tyler is currently based in Shanghai, China.</p>
+        <!-- <div class="sns-buttons">
+        <button class="mdl-button mdl-js-button mdl-button--raised">
+          <a class="p-link" href="data/cv.pdf" download target="_blank">CV</a>
+        </button>
+        <button class="mdl-button mdl-js-button mdl-button--raised">
+          <a class="p-link" href="https://www.linkedin.com/pub/jiwon-shin/98/2aa/608" target="_blank">LinkedIn</a>
+        </button>
+        <button class="mdl-button mdl-js-button mdl-button--raised">
+          <a class="p-link" href="http://github.com/js6450" target="_blank">GitHub</a>
+        </button>
+        <button class="mdl-button mdl-js-button mdl-button--raised">
+          <a class="p-link" href="https://www.youtube.com/channel/UCoVh14zTTL9zmthk5C1ZvmQ" target="_blank">Youtube</a>
+        </button>
+      </div> -->
+    </div>
+    </div>
+    <div id="weChatModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+        <center><img class="wechatpho" src="./images/we.jpg"></img></center>
+    </div>
+</div>
+    <!-- <footer class="mdl-mini-footer">
+      <div class="mdl-mini-footer__left-section">
+        <div class="mdl-logo">Jiwon Shin</div>
+        <ul class="mdl-mini-footer__link-list">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Interact</a></li>
+          <li><a href="#">Create</a></li>
+        </ul>
+      </div>
+  </main>
+  </footer> -->
+</div>
+</body>
+<script type="text/javascript">
+var we = document.getElementById('weChatModal');
+var wespan = document.getElementsByClassName("close")[0];
+function wedisplay(){
+  we.style.display="block";
+}
+wespan.onclick = function() {
+            we.style.display = "none";
+          }
+</script>
+</html>

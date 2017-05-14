@@ -1,0 +1,32 @@
+@font-face{
+	font-family:'sharp';
+	src:url(./data/hillary.otf);
+}
+body{
+	background: #323232;
+}
+.home
+{
+	font-family:'sharp';
+	font-size:30px;
+	text-align: center;
+	position:relative;
+	top:-150px;
+	right:0px;
+	padding-bottom: 10px;
+	padding-top:35px;
+	padding-left:20px;
+	padding-right:20px;
+	color:white;
+
+} 
+.logo
+{
+	text-align:center;
+
+} 
+
+#button{
+	position:relative;
+	top:-150px;
+}
